@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ffffff"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/back_button"
+        android:gravity="center" />
+
+    <ImageButton
+        android:id="@+id/all_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/all"
+        android:gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="100"
+        android:gravity="center"
+        android:text="文件管理"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/delete_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:background="@drawable/trash"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/index_button"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:visibility="visible" />
+</LinearLayout>

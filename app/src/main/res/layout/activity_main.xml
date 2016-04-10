@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_bar" />
+
+    <include layout="@layout/divider" />
+
+    <!-- 显示当前路径的的文本框 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/path_one"
+            android:layout_weight="0.01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/divider" />
+    <!-- 列出当前路径下所有文件的ListView -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#000000"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/hint_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="没有文件"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>
